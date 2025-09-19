@@ -1,0 +1,12 @@
+/* Para que los indicadores sean redondos*/
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+/* Para el indicador activo */
+.carousel-indicators .active {
+    background-color: #009423;
+}
