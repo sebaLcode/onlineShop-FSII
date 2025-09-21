@@ -1,0 +1,12 @@
+.sidebar .nav-link {
+    color: #ffffff;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.sidebar .nav-link.active {
+    background-color: #9838cf;
+}
