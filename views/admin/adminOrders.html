@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../css/adminOrders.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark sidebar">
+                    <div class="d-flex flex-column px-3 pt-2 text-white min-vh-100">
+                        <!-- <a href="/"
+                            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <span class="fs-5 d-none d-sm-inline">Menu</span>
+                        </a> -->
+                        <a href="/"
+                            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                            <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
+                                <use xlink:href="#bootstrap"></use>
+                            </svg>
+                            <span class="fs-4">Sidebar</span>
+                        </a>
+
+                        <hr class="w-100">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0" id="menu">
+                            <li class="nav-item">
+                                <a href="./adminHome.html" class="nav-link d-block w-100 align-middle">
+                                    <i class="fs-4 bi bi-grid-3x2-gap-fill"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Dashboard</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link d-block w-100 align-middle active">
+                                    <i class="fs-4 bi-receipt"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Orders</span></a>
+                            </li>
+
+                            <li>
+                                <a href="./adminInventory.html" class="nav-link d-block w-100 align-middle">
+                                    <i class="fs-4 bi-table"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Inventory</span></a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link d-block w-100 align-middle">
+                                    <i class="fs-4 bi-file-earmark-bar-graph"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Reports</span></a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link d-block w-100 align-middle">
+                                    <i class="fs-4 bi-person"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Employees</span></a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link d-block w-100 align-middle">
+                                    <i class="fs-4 bi-people"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                            </li>
+                        </ul>
+
+                        <div class="mt-auto">
+
+
+                            <ul class="nav nav-pills flex-column mb-sm-auto mb-0">
+                                <li>
+                                    <a href="#" class="nav-link align-middle">
+                                        <i class="fs-4 bi bi-gear"></i>
+                                        <span class="ms-1 d-none d-sm-inline">Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link align-middle">
+                                        <i class="fs-4 bi bi-person-circle"></i>
+                                        <span class="ms-1 d-none d-sm-inline">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link align-middle">
+                                        <i class="fs-4 bi bi-search"></i>
+                                        <span class="ms-1 d-none d-sm-inline">Search</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link align-middle">
+                                        <i class="fs-4 bi bi-question-circle"></i>
+                                        <span class="ms-1 d-none d-sm-inline">Help</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="w-100">
+                        <div class="dropdown pb-4">
+                            <a href="#"
+                                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <i class="fs-4 bi-person-circle"></i>
+                                <span class="d-none d-sm-inline mx-1">Profile</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4 mx-5">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center gap-3">
+                            <h1>Usuarios</h1>
+                            <a href="./adminNewUser.html" class="btn btn-dark">
+                                <i class="bi bi-plus-lg"></i> Nuevo Usuario
+                            </a>
+                        </div>
+                        <i class="fs-4 bi-bell-fill"></i>
+                    </div>
+                    <table class="table table-hover table-striped align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Order #</th>
+                                <th scope="col">Customer</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-06-01</td>
+                                <td>SO1001</td>
+                                <td>Acme Corporation</td>
+                                <td><span class="badge bg-success">Shipped</span></td>
+                                <td>$2500.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-02</td>
+                                <td>SO1002</td>
+                                <td>Bravo Solutions</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                <td>$1200.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-03</td>
+                                <td>SO1003</td>
+                                <td>Charlie's Workshop</td>
+                                <td><span class="badge bg-danger">Cancelled</span></td>
+                                <td>$500.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-04</td>
+                                <td>SO1004</td>
+                                <td>Delta Retail</td>
+                                <td><span class="badge bg-info text-dark">Processing</span></td>
+                                <td>$750.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-05</td>
+                                <td>SO1005</td>
+                                <td>Echo Enterprises</td>
+                                <td><span class="badge bg-success">Shipped</span></td>
+                                <td>$3000.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-06</td>
+                                <td>SO1006</td>
+                                <td>Foxtrot Media</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                <td>$950.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-07</td>
+                                <td>SO1007</td>
+                                <td>Golf Goods Inc.</td>
+                                <td><span class="badge bg-success">Shipped</span></td>
+                                <td>$2300.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-08</td>
+                                <td>SO1008</td>
+                                <td>Hotel Harmony</td>
+                                <td><span class="badge bg-info text-dark">Processing</span></td>
+                                <td>$900.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-09</td>
+                                <td>SO1009</td>
+                                <td>India IT Solutions</td>
+                                <td><span class="badge bg-danger">Cancelled</span></td>
+                                <td>$600.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-10</td>
+                                <td>SO1010</td>
+                                <td>Juliet Services</td>
+                                <td><span class="badge bg-success">Shipped</span></td>
+                                <td>$1850.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-11</td>
+                                <td>SO1011</td>
+                                <td>Kilo Retail Group</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                <td>$2750.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-12</td>
+                                <td>SO1012</td>
+                                <td>Lima Landscaping</td>
+                                <td><span class="badge bg-success">Shipped</span></td>
+                                <td>$840.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-13</td>
+                                <td>SO1013</td>
+                                <td>Mike's Mechanics</td>
+                                <td><span class="badge bg-info text-dark">Processing</span></td>
+                                <td>$1950.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-14</td>
+                                <td>SO1014</td>
+                                <td>November Nightlife</td>
+                                <td><span class="badge bg-success">Shipped</span></td>
+                                <td>$3250.00</td>
+                            </tr>
+                            <tr>
+                                <td>2024-06-15</td>
+                                <td>SO1015</td>
+                                <td>Oscar Outdoors</td>
+                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                <td>$1100.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <script src="../../adminOrders.html"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
