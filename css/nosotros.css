@@ -1,0 +1,22 @@
+.text-blossom {
+  color: #e75480;
+}
+
+section h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.border {
+  border: 2px solid #f7cfe3 !important;
+}
+
+.card img {
+  border: 3px solid #f7cfe3;
+  padding: 4px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}

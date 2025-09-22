@@ -1,0 +1,16 @@
+.text-blossom {
+  color: #e75480;
+}
+
+.btn-custom-blossom {
+  border: 2px solid #e75480;
+  color: #e75480;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-custom-blossom:hover {
+  background-color: #e75480;
+  color: #fff;
+}
