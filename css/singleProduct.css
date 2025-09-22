@@ -15,3 +15,51 @@
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+#producto-nombre {
+    color: #e75480;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+#producto-precio {
+    color: #6bbf59 !important;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#producto-descripcion {
+    color: #444444;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+#cantidad {
+    border: 2px solid #f7cfe3;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#cantidad:focus {
+    border-color: #e75480;
+    box-shadow: 0 0 6px rgba(231, 84, 128, 0.4);
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #e75480;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c63c67;
+    transform: translateY(-2px);
+}
