@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
+    <link rel="icon" href="../../assets/icons/icon.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="https://images.scalebranding.com/simple-leaf-logo-04a397bd-40d9-46c1-8237-73de35fe2bc0.jpg"
-                        alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    Site Name
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="../../assets/icons/icon_no_text.png" alt="Logo" width="70" height="70" class="me-2">
+                    <span class="fw-bold">Blossom</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -29,10 +30,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-5 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../public/productos.html">Productos</a>
+                            <a class="nav-link active" href="../public/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../public/nosotros.html">Nosotros</a>
@@ -46,7 +47,7 @@
                     </ul>
 
                     <div class="d-flex ms-auto">
-                        <a href="#" class="btn btn-outline-success position-relative">
+                        <a href="./carroCompras.html" class="btn btn-custom position-relative">
                             <i class="bi bi-cart-fill"></i>
                             <span> Cart (0)</span>
                         </a>
@@ -58,22 +59,21 @@
 
     <main>
         <!-- carousel de imagenes -->
-        <div id="carouselExample" class="carousel slide container mt-5" data-bs-ride="carousel" data-bs-interval="2500"
-            style="max-width: 400px;">
+        <div id="carouselExample" class="carousel slide container mt-2" data-bs-ride="carousel" data-bs-interval="2500"
+            style="max-width: 350px;">
             <div class="carousel-inner">
                 <!-- Imagen 1 -->
                 <div class="carousel-item active">
-                    <img src="https://www.techsmith.com/wp-content/uploads/2023/08/What-are-High-Resolution-Images.png"
-                        class="d-block w-100" alt="Imagen 1">
+                    <img src="../../assets/icons/icon_no_text.png" class="d-block w-100" alt="Imagen 1">
                 </div>
                 <!-- Imagen 2 -->
                 <div class="carousel-item">
-                    <img src="https://www.techsmith.com/wp-content/uploads/2023/08/What-are-High-Resolution-Images.png"
+                    <img src="https://storage.googleapis.com/rosalinda-productos/producto/2292/14130/800/14130.jpg"
                         class="d-block w-100" alt="Imagen 2">
                 </div>
                 <!-- Imagen 3 -->
                 <div class="carousel-item">
-                    <img src="https://www.techsmith.com/wp-content/uploads/2023/08/What-are-High-Resolution-Images.png"
+                    <img src="https://storage.googleapis.com/rosalinda-productos/producto/2780/18546/800/18546.jpg"
                         class="d-block w-100" alt="Imagen 3">
                 </div>
             </div>
@@ -92,13 +92,12 @@
                 class="card-img-top pt-3" alt="..." style="max-width: 400px;">
 
         </div> -->
-        <h2 class="text-center mt-3">DondeElDonde</h2>
+        <h2 class="text-center mt-1">Blossom</h2>
         <div class="container mt-5 d-flex justify-content-center align-items-center">
             <div class="card p-4" style="max-width: 600px; width: 100%;">
                 <h3 class="text-center mb-4">Iniciar sesión</h3>
 
-                <form>
-
+                <form id="form">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="loginEmail" placeholder="Ingresa tu email">
@@ -111,9 +110,11 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button id="btnLogin" type="submit" class="btn btn-success w-50 center">Iniciar Sesión</button>
+                        <button id="btnLogin" type="submit" class="btn btn-success w-50 center">Iniciar
+                            Sesión</button>
 
                     </div>
+
                     <p class="text-center mt-3 small">¿Aún no tienes cuenta?
                         <a href="./register.html">Crear cuenta</a>
                     </p>
@@ -125,6 +126,7 @@
     <footer>
 
     </footer>
+    <script src="../../js/usersData.js"></script>
     <script src="../../js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
