@@ -12,14 +12,13 @@ cartas.forEach(carta => {
 
     carta.querySelector(".card-price").textContent = "$" + productos[contador].price.toLocaleString("es-CL")
 
-    if (contador === 0) {    // TODO: DESPUÉS QUITAR EL IF (CUANDO AGREGUE MÁS IMAGENES EN productosData)
-        carta.querySelector(".card-img-top").src = productos[contador].image;     //mantener esta línea
-    }
+    carta.querySelector(".card-img-top").src = productos[contador].image;
     contador += 1;
 });
 
 // console.log(productos[0])
 
+// TODO: Falta agregar que cuando doy click en el boton, se me agregué +1 en el Cart superior
 document.addEventListener("DOMContentLoaded", () => {
     // Seleccionamos todos los botones "Añadir"
     const botones = document.querySelectorAll(".carta-producto .btn");
@@ -41,10 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             console.log(producto);
 
-            // Guardamos en el localStorage
             let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-            // Verificar si ya existe en el carrito
             const productoExistente = carrito.find(p => p.id === producto.id);
             if (productoExistente) {
                 productoExistente.cantidad += 1;
