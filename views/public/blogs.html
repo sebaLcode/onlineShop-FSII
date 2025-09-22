@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
+    <link rel="icon" href="../../assets/icons/icon.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/blogs.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="https://images.scalebranding.com/simple-leaf-logo-04a397bd-40d9-46c1-8237-73de35fe2bc0.jpg"
-                        alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    Site Name
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="../../assets/icons/icon_no_text.png" alt="Logo" width="70" height="70" class="me-2">
+                    <span class="fw-bold">Blossom</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -28,7 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-5 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="../../index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./productos.html">Productos</a>
@@ -37,7 +39,7 @@
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./blogs.html">Blogs</a>
+                            <a class="nav-link active" href="./blogs.html">Blogs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -45,7 +47,7 @@
                     </ul>
 
                     <div class="d-flex ms-auto">
-                        <a href="#" class="btn btn-outline-success position-relative">
+                        <a href="../user/carroCompras.html" class="btn btn-custom position-relative">
                             <i class="bi bi-cart-fill"></i>
                             <span> Cart (0)</span>
                         </a>
@@ -56,52 +58,56 @@
     </header>
 
     <main>
-        <h1 class="text-center mt-4 fw-bold">Noticias Importantes</h1>
+        <h1 class="text-center mt-4 fw-bold  text-blossom">Noticias Importantes</h1>
 
         <div class="container-fluid mt-4 px-5">
             <!-- Caso 1 -->
             <div class="card p-4 shadow-lg mb-5">
                 <div class="row align-items-stretch">
                     <div class="col-md-6 d-flex flex-column">
-                        <h2 class="fw-bold mb-3 pt-5">CASO CURIOSO #1</h2>
+                        <h2 class="fw-bold mb-3 pt-5 text-blossom">Aprende a cuidar tus flores en verano #1</h2>
+                        <p class="text-muted small">Publicado el 21 Sept 2025 · por Blossom</p>
                         <p class="mb-3">
-                            Our North American Field Guides provide tips for identifying birds in all of the regions
-                            of the United States and Canada. Download any of our guides for free now!
+                            Descubre los trucos fáciles para que tus rosas duren más tiempo, e incluso en los días más
+                            calurosos...
                         </p>
 
-                        <a href="#" class="btn btn-outline-dark btn-lg mt-auto align-self-start mt-3">
+                        <a href="#" class="btn btn-custom-blossom btn-lg mt-auto align-self-start mt-3">
                             Ver Caso <i class="bi bi-arrow-down-short"></i>
                         </a>
                     </div>
 
                     <div class="col-md-6 text-center">
-                        <img src="https://my.alfred.edu/zoom/_images/foster-lake.jpg" alt="Imagen hero"
-                            class="img-fluid rounded">
-                    </div>
-                </div>
-            </div>
-            <!-- Caso 2 -->
-            <div class="card p-4 shadow-lg mb-4">
-                <div class="row align-items-stretch">
-                    <div class="col-md-6 d-flex flex-column">
-                        <h2 class="fw-bold mb-3 pt-5">CASO CURIOSO #2</h2>
-                        <p class="mb-3">
-                            Our North American Field Guides provide tips for identifying birds in all of the regions
-                            of the United States and Canada. Download any of our guides for free now!
-                        </p>
-
-                        <a href="#" class="btn btn-outline-dark btn-lg mt-auto align-self-start mt-3">
-                            Ver Caso <i class="bi bi-arrow-down-short"></i>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 text-center">
-                        <img src="https://my.alfred.edu/zoom/_images/foster-lake.jpg" alt="Imagen hero"
-                            class="img-fluid rounded">
+                        <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco/k/archive/500d47a790195ea0350b2bcc6880026194c0cb3e"
+                            alt="Imagen hero" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
             
+            <!-- Caso 2 -->
+            <div class="card p-4 shadow-lg mb-4">
+                <div class="row align-items-stretch">
+                    <div class="col-md-6 d-flex flex-column">
+                        <h2 class="fw-bold mb-3 pt-5 text-blossom">El secreto de los tulipanes #2</h2>
+                        <p class="text-muted small">Publicado el 21 Sept 2025 · por Blossom</p>
+                        <p class="mb-3">
+                            Los tulipanes destacan por sus colores vibrantes, pero tambien tienen significados únicos,
+                            desde la pasión hasta el perdón. Descubre qué significa cada color y cuándo debes
+                            regalarlos.
+                        </p>
+
+                        <a href="#" class="btn btn-custom-blossom btn-lg mt-auto align-self-start mt-3">
+                            Ver Caso <i class="bi bi-arrow-down-short"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <img src="https://c.wallhere.com/photos/a9/48/flowers_colorful_colourfull_tulips-15436.jpg!d"
+                            alt="Imagen hero" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
