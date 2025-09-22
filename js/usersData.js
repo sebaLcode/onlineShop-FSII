@@ -53,8 +53,8 @@ let usuarios =[
     {
         id: 6,
         nombre: "Jorginho Jr",
-        email: "ped@gmail.com",
-        password: "admin123456",
+        email: "jor@gmail.com",
+        password: "admin1234",
         telefono: "",
         region: "Región Metropolitana de Santiago",
         comuna: "San Bernardo",
